@@ -1,3 +1,13 @@
+/* eslint-disable */ 
+
+/*
+Brief introduction about the purpose of this service:
+  In my application's dashboard, the user should graphically,
+  have an overview of both the won and lost
+  Games, as well as the status of his point level. This
+  graphically overview is implemented with PieCharts.
+*/
+
 import {ElementRef, Injectable} from '@angular/core';
 import {Chart} from 'chart.js';
 
