@@ -155,6 +155,12 @@ export class ChartService {
     const primColContrast = pageDomStyle.getPropertyValue('--ion-color-primary-second-contrast');
     const htmlCanvasElement = chartRef?.nativeElement;
 
+    /*
+      Narrow down the type with a type guard. Since my TypeScript
+      parser is on strict mode, i always get rememberd to not
+      forget about possibile undefined or null. Static code analysis
+      avoids headaches.
+    */
     if (
       htmlCanvasElement === undefined ||
       htmlCanvasElement instanceof(HTMLCanvasElement) === false
@@ -213,6 +219,9 @@ export class ChartService {
   'ChartServiceHelper' module in a separate file.
 */
 module ChartServiceHelper {
+  /*
+    self defined TypeGuards are really handy
+  */
   export function isNotCanvas(
       canvas: CanvasRenderingContext2D | null,
   ): canvas is null {
