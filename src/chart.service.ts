@@ -172,6 +172,11 @@ export class ChartService {
   };
 };
 
+/*
+  The file has got too many lines in the meantime.
+  It would be better to store the
+  'ChartServiceHelper' module in a separate file.
+*/
 module ChartServiceHelper {
   export function isNotCanvas(
       canvas: CanvasRenderingContext2D | null,
