@@ -8,6 +8,12 @@ Brief introduction about the purpose of this service:
   graphically overview is implemented with PieCharts.
 */
 
+/*
+  The functions are arranged according to their degree
+  of abstraction and are structured according to the
+  single-responsiblity principle.
+*/
+
 import {ElementRef, Injectable} from '@angular/core';
 import {Chart} from 'chart.js';
 
