@@ -86,6 +86,11 @@ export class ChartService {
     }
   };
 
+  /*
+    The functions "handleSingleLine" and "handleMultipleLines"
+    are outsourced from "passThroughToLines" to keep the
+    principle of single-responsibility.
+  */
   private handleSingleLine: ServiceTypes.PassThrough = (
       chart,
       drawSingleLineText,
