@@ -41,6 +41,13 @@ export class ChartService {
   ): void {
     const canvas = chart.ctx;
 
+    /*
+      Prefer early returns. This makes
+      functions easier to read and more
+      predictable as they only do their
+      assigned task at the end of their
+      body.
+    */
     if (ChartServiceHelper.isNotCanvas(canvas)) {
       return;
     }
