@@ -11,6 +11,9 @@ Brief introduction about the purpose of this service:
 import {ElementRef, Injectable} from '@angular/core';
 import {Chart} from 'chart.js';
 
+/*
+make it tree shakable. better to not bloat the bundles.
+*/
 @Injectable({
   providedIn: 'root',
 })
