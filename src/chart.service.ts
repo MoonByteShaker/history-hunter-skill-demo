@@ -54,6 +54,15 @@ export class ChartService {
 
     this.setChartFont(canvas);
 
+    /*
+      In order to follow the principle of
+      single-responsibility, the case distinction
+      in which context the functional core is to
+      be executed was outsourced to another function.
+
+      If there were a higher number of case distinctions,
+      I would have used the strategy pattern instead.
+    */
     this.passThroughToLines(chart, (text, posX, posY) => {
       canvas.restore();
       canvas.fillText(text, posX, posY);
