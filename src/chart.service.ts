@@ -130,6 +130,9 @@ export class ChartService {
   private setChartFont(
       canvas: CanvasRenderingContext2D,
   ): void {
+    /*
+      Always prefer readability before the tempting one-liner.
+    */
     const pageDomStyle: CSSStyleDeclaration = getComputedStyle(document.body);
     canvas.font = pageDomStyle.getPropertyValue('font');
   };
