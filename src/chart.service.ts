@@ -137,6 +137,11 @@ export class ChartService {
     canvas.font = pageDomStyle.getPropertyValue('font');
   };
 
+  /*
+    If i have to touch this function again i would outsource
+    the json object togain more readability and follow the
+    seperation of concerns.
+  */
   createDoughnutChart(
       chartRef: ElementRef<HTMLCanvasElement> | undefined,
       conf: {
