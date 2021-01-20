@@ -315,6 +315,11 @@ module ChartServiceHelper {
   };
 };
 
+/*
+  Since function signatures are able
+  to get bloat, some of them should
+  get outsourced.
+*/
 module ServiceTypes {
   export type PassThrough = (
     this: ChartService,
